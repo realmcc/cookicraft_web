@@ -37,7 +37,6 @@
 <body>
   
     <section data-bs-version="5.1" class="menu menu2 cid-tkbL8n4vab" once="menu" id="menu2-16">
-    
         <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
             <div class="container-fluid">
                 <div class="navbar-brand">
@@ -48,12 +47,12 @@
                     </span>
                     <span class="navbar-caption-wrap">
                         <a class="navbar-caption text-white display-7" href="index.html">CookiCraft</a>
-                        <span style="display: flex; align-items: center; font-size: smaller; position: relative; top: 0.5rem;">
-                            <span style="color: white;">powered by</span>
-                            <a href="https://shildiihost.de" target="_blank" style="margin-left: 0.5rem; margin-right: 0.5rem;">
-                                <img src="assets/images/shildii.png" alt="ShildiiHost Logo" style="height: 1rem; vertical-align: middle;">  
+                        <span class="shildiihost-container" style="display: flex; align-items: center; font-size: smaller; position: relative; top: 0.5rem;">
+                            <a href="https://shildiihost.de" target="_blank" class="shildiihost-link" style="color: white; display: flex; align-items: center; text-decoration: none;">
+                                <span class="d-none d-lg-inline">powered by</span>
+                                <img src="assets/images/shildii.png" alt="ShildiiHost Logo" style="height: 1rem; vertical-align: middle; margin: 0 0.5rem;">
+                                <span class="d-none d-lg-inline">ShildiiHost</span>
                             </a>
-                            <span style="color: white;">ShildiiHost</span>
                         </span>
                     </span>
                 </div>
@@ -76,8 +75,19 @@
                 </div>
             </div>
         </nav>
-    
     </section>
+    
+    <style>
+        @media (max-width: 991.98px) { /* Bootstrap breakpoint for lg */
+            .shildiihost-container {
+                justify-content: center;
+            }
+            .shildiihost-link span:not(.d-none) {
+                display: none;
+            }
+        }
+    </style>
+    
     
 
 <section data-bs-version="5.1" class="header14 cid-tjqvOAjwRT mbr-fullscreen mbr-parallax-background" id="header14-t">

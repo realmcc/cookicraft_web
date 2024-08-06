@@ -48,11 +48,11 @@
                     </span>
                     <span class="navbar-caption-wrap">
                         <a class="navbar-caption text-white display-7" href="index.html">CookiCraft</a>
-                        <span style="display: flex; align-items: center; font-size: smaller; position: relative; top: 0.5rem;">
-                            <a href="https://shildiihost.de" target="_blank" style="color: white; display: flex; align-items: center; text-decoration: none;">
-                                <span>powered by</span>
+                        <span class="shildiihost-container" style="display: flex; align-items: center; font-size: smaller; position: relative; top: 0.5rem;">
+                            <a href="https://shildiihost.de" target="_blank" class="shildiihost-link" style="color: white; display: flex; align-items: center; text-decoration: none;">
+                                <span class="d-none d-lg-inline">powered by</span>
                                 <img src="assets/images/shildii.png" alt="ShildiiHost Logo" style="height: 1rem; vertical-align: middle; margin: 0 0.5rem;">
-                                <span>ShildiiHost</span>
+                                <span class="d-none d-lg-inline">ShildiiHost</span>
                             </a>
                         </span>
                     </span>
@@ -77,6 +77,18 @@
             </div>
         </nav>
     </section>
+    
+    <style>
+        @media (max-width: 991.98px) { /* Bootstrap breakpoint for lg */
+            .shildiihost-container {
+                justify-content: center;
+            }
+            .shildiihost-link span:not(.d-none) {
+                display: none;
+            }
+        }
+    </style>
+    
     
     
     
